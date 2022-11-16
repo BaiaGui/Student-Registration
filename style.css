@@ -85,7 +85,7 @@ background-color: rgba(255, 255, 255, 0.1) ;
 }
 
 .pageTitle{
-    font-size: 17pt;
+    font-size: 15pt;
     margin-bottom: 5px;
     color: rgb(100, 100, 100);
 }
@@ -98,8 +98,47 @@ background-color: rgba(255, 255, 255, 0.1) ;
 
 
 /*PAGE SPECIFIC CSS----------------------------------------------------------------------------------------------*/
+/*Cadastros.html*/
 .cadCont{
-    width: 800px;
-    height: 300px;
+    width: auto;
+    height: auto;
 }
 
+table{
+    border-spacing: 0px;
+    font-size: 10pt;
+    
+}
+
+.tableTitle{
+    color: #444343;
+    font-size: 11pt;
+    width: 110px;
+    font-weight: bold;
+}
+
+tr{
+    font-size: 10pt;
+    color: #7E7E7E;
+    text-align: center;
+    
+    
+}
+
+tr, .tableTitle, td{
+    padding: 20px 15px;
+
+}
+
+.tableOptions{
+    display: none;
+}
+
+.tableRow:hover{
+    background-color: #F9F9F9;
+    color: #2F580E;
+}
+
+.smallCell{
+
+}
