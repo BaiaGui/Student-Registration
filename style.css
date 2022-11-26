@@ -76,6 +76,27 @@ li{
 background-color: rgba(255, 255, 255, 0.1) ;
 }
 
+
+/*Feedback Messages*/
+.errorMsg{
+    background-color: rgb(252, 222, 222);
+    color: red;
+    padding: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.349);
+    margin: -70px auto 20px auto;
+    text-align: center;
+}
+
+.successMsg{
+    background-color: rgb(199, 247, 187);
+    color: rgb(15, 160, 2);
+    padding: 20px;
+    border: 1px solid rgba(0, 255, 21, 0.349);
+    margin: -70px auto 20px auto;
+    text-align: center;
+}
+
+
 /*Content Container*/
 
 .container{
@@ -152,6 +173,7 @@ form{
     grid-template-columns: repeat(5, 100px);
     grid-template-rows: repeat(3, 1fr);
     width: auto;
+    height: 300px;
     align-items: stretch;
     justify-content: center;
     gap: 10px;
