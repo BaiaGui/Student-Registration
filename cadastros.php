@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-         <p class="logo">SI401 - PHP</h1>
+         <p class="logo">SI401 - PHP</p>
     </header>
     <div class="sideBarMenu">
         <ul>
@@ -44,7 +44,8 @@
                                 <td class="tableText">'.$row["sexo"].'</td>
                                 <td class="tableText">'.$row["email"].'</td>
                                 <td class="tableText">'.$row["telefone"].'</td>
-                                <td class="tableText">'.$row["endereco"].'</td>';
+                                <td class="tableText">'.$row["endereco"].'</td>
+                            </tr>';
                     }
                 
                 ?>

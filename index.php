@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <p class="logo">SI401 - PHP</h1>
+        <p class="logo">SI401 - PHP</p>
     </header>
     <div class="sideBarMenu">
         <ul>
@@ -45,7 +45,7 @@
     
                 <input type="text" placeholder="Data Nascimento" id="dataNasc" onfocus="(this.type='date')"  onblur="(this.type='text')" name="datanasc" required>
                 <!-- <input type="text" placeholder="Sexo" id="sexo" name="sexo" required> -->
-                <select name="sexo" id="sexo" placeholder="Sexo" required>
+                <select name="sexo" id="sexo" required>
                     <option value="" disabled selected>Sexo</option>
                     <option value="M">Masculino</option>
                     <option value="F">Feminino</option>
