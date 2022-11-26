@@ -25,7 +25,7 @@ header{
 
 }
 
-.menuButton{
+/* .menuButton{
     background-color: white;
     width: 40px;
     height: 40px;
@@ -42,6 +42,13 @@ header{
 .menuIcon{
     width: 25px;
     opacity: 50%;
+} */
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left:30px;
 }
 
 .sideBarMenu{
@@ -180,10 +187,11 @@ form{
     margin: 30px auto;
 }
 
-input{
+input, select{
     padding: 20px;
     border-radius: 5px;
     border: 1px solid #acacac;
+    color: black;
 }
 
 #ra{
@@ -196,6 +204,11 @@ input{
 
 #dataNasc{
     grid-column: 1 / 3;
+}
+
+#sexo{
+    padding: 5px;
+    cursor: pointer;
 }
 
 #email{

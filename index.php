@@ -12,27 +12,27 @@
 </head>
 <body>
     <header>
-        <button class="menuButton"><img src="img/MenuIcon.svg" alt="Menu" class="menuIcon"></button>
+        <p class="logo">SI401 - PHP</h1>
     </header>
     <div class="sideBarMenu">
         <ul>
-            <li><a href="index.html" class="menuLink">Cadastrar</a></li>
-            <li><a href="cadastros.html" class="menuLink">Alunos Cadastrados</a></li>
+            <li><a href="index.php" class="menuLink">Cadastrar</a></li>
+            <li><a href="cadastros.php" class="menuLink">Alunos Cadastrados</a></li>
         </ul>
     </div>
     <div class="container">
     <?php 
                 if(isset($_SESSION['connError'])){
                     echo "<p class='errorMsg'>Conexão com o banco falhou!</p>";
-                    //unset($_SESSION['connError']);
+                    unset($_SESSION['connError']);
                 }
                 if(isset($_SESSION['success'])){
                     if($_SESSION['success']==1){
                         echo '<p class="successMsg">Cadastro realizado com sucesso!</p>';
-                        //unset($_SESSION['success']);
+                        unset($_SESSION['success']);
                     }else{
                         echo '<p class= "errorMsg">Erro ao cadastrar: <br>' .$_SESSION['success'].'</p>';
-                        //unset($_SESSION['success']);
+                        unset($_SESSION['success']);
                     }
                 }
 
@@ -44,7 +44,12 @@
                 <input type="text" placeholder="Nome" id="nome" name="nome" required>
     
                 <input type="text" placeholder="Data Nascimento" id="dataNasc" onfocus="(this.type='date')"  onblur="(this.type='text')" name="datanasc" required>
-                <input type="text" placeholder="Sexo" id="sexo" name="sexo" required>
+                <!-- <input type="text" placeholder="Sexo" id="sexo" name="sexo" required> -->
+                <select name="sexo" id="sexo" placeholder="Sexo" required>
+                    <option value="" disabled selected>Sexo</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
                 <input type="email" placeholder="Email" id="email" name="email" required>
     
                 <input type="text" placeholder="Endereço" id="endereco" name="endereco" required>

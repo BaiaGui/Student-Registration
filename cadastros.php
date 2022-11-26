@@ -7,12 +7,12 @@
 </head>
 <body>
     <header>
-        <button class="menuButton"><img src="img/MenuIcon.svg" alt="Menu" class="menuIcon"></button>
+         <p class="logo">SI401 - PHP</h1>
     </header>
     <div class="sideBarMenu">
         <ul>
-            <li><a href="index.html" class="menuLink">Cadastrar</a></li>
-            <li><a href="cadastros.html" class="menuLink">Alunos Cadastrados</a></li>
+            <li><a href="index.php" class="menuLink">Cadastrar</a></li>
+            <li><a href="cadastros.php" class="menuLink">Alunos Cadastrados</a></li>
         </ul>
     </div>
     <div class="container">
