@@ -1,3 +1,6 @@
+<?php
+    include_once 'connection.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,26 +32,22 @@
                     
                     <th class="tableTitle">Endereço</th> 
                 </tr>
-                <tr class="tableRow">
-                    <td class="tableText">251569</td>
-                    <td class="tableText">Joselino Alves da Silva</td>
-                    <td class="tableText">19</td>
-                    <td class="tableText">M</td>
-                    <td class="tableText">j251569@dac.unicamp.br</td>
-                    <td class="tableText">(11)98765-0543</td>
+                <?php
+                    $selectStudents= "SELECT ra, nome, TIMESTAMPDIFF(YEAR, data_nasc, CURDATE()) as idade, sexo, email, telefone, endereco  FROM aluno";
+                    $students=$conn->query($selectStudents);
 
-                    <td class="tableText">R. Alamedas Verdes, 124, Jardim Nova Iguaçu</td>
-                </tr>
-                <tr class="tableRow">
-                    <td class="tableText">251569</td>
-                    <td class="tableText">Joselino Alves da Silva</td>
-                    <td class="tableText">19</td>
-                    <td class="tableText">M</td>
-                    <td class="tableText">j251569@dac.unicamp.br</td>
-                    <td class="tableText">(11)98765-0543</td>
-
-                    <td class="tableText">R. Alamedas Verdes, 124, Jardim Nova Iguaçu</td>
-                </tr>
+                    while($row = $students->fetch(PDO::FETCH_ASSOC)) {
+                        echo '<tr class="tableRow">
+                                <td class="tableText">'.$row["ra"].'</td>
+                                <td class="tableText">'.$row["nome"].'</td>
+                                <td class="tableText">'.$row["idade"].'</td>
+                                <td class="tableText">'.$row["sexo"].'</td>
+                                <td class="tableText">'.$row["email"].'</td>
+                                <td class="tableText">'.$row["telefone"].'</td>
+                                <td class="tableText">'.$row["endereco"].'</td>';
+                    }
+                
+                ?>
             </table>
         </div>
     </div>

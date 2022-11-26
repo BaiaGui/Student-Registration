@@ -39,7 +39,7 @@
         ?>
         <h1 class="pageTitle">Cadastrar Aluno</h1>
         <div class="baseContainer formCont">
-            <form action="conn.php" name="formUserCad" method="POST">
+            <form action="processForm.php" name="formUserCad" method="POST">
                 <input type="text" placeholder="RA" id="ra" name="ra" required>
                 <input type="text" placeholder="Nome" id="nome" name="nome" required>
     
