@@ -5,11 +5,6 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 
 include_once 'connection.php';
 
-// $host="localhost";
-// $user="root";
-// $pswd="";
-// $dbname="alunosbd";
-
 //form
 $ra=$_POST["ra"];
 $nome=$_POST["nome"];
@@ -34,7 +29,5 @@ catch(PDOException $e){
     $_SESSION['success']=$e->getMessage();
     header("location: index.php");
 }
-
-
 
 ?>

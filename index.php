@@ -44,29 +44,15 @@
                 <input type="text" placeholder="Nome" id="nome" name="nome" required>
     
                 <input type="text" placeholder="Data Nascimento" id="dataNasc" onfocus="(this.type='date')"  onblur="(this.type='text')" name="datanasc" required>
-                <!-- <input type="text" placeholder="Sexo" id="sexo" name="sexo" required> -->
                 <select name="sexo" id="sexo" required>
                     <option value="" disabled selected>Sexo</option>
                     <option value="M">Masculino</option>
                     <option value="F">Feminino</option>
                 </select>
                 <input type="email" placeholder="Email" id="email" name="email" required>
-    
                 <input type="text" placeholder="Endereço" id="endereco" name="endereco" required>
                 <input type="tel" placeholder="Telefone" id="telefone" name="telefone" required>
-    
                 <input type="submit" value="Cadastrar" id="sendFormBtn" name="cadUser">
-                <!--
-                    RA
-                    Nome
-                    Data Nasc
-                    Sexo
-                    Email
-                    Endereço
-                    Telefone
-    
-                    Cadastrar
-                -->
             </form>
         </div>
 
