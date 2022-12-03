@@ -10,9 +10,9 @@ try{
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     
-    catch(PDOException $e){
-        $_SESSION['connError']=1;
-        header("location: index.php");
+catch(PDOException $e){
+    $_SESSION['connError']=1;
+    header("location: index.php");
         
     }
 
