@@ -1,6 +1,6 @@
 # Student-Registration
+![Student Registration Thumb](https://raw.githubusercontent.com/BaiaGui/Student-Registration/main/studentRegistrationThumb.png)
 Sistema de cadastro e visualização de alunos utilizando HTML, CSS, PHP e MySQL. Este projeto simplifica e agiliza o processo de cadastro e consulta de informações de alunos através de uma interface intuitiva.
-
 ## Instruções de configuração:
 1) O nome do banco deve ser `alunosbd`
 2) Para a criação da tabela, utilize a seguinte query:
